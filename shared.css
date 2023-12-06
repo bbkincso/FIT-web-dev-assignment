@@ -40,29 +40,34 @@ abbr,acronym { border:0;
 }
 
 
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 /* Style for header */
 .main-header{
     width: 100%;
-    height: 20rem;
+    height: 30rem;
     padding: 1rem;
+    background: url("images/bar-banner.png");
 }
 
-.main-header > div {
-    display: inline-block;
-}
+
+    
+
 .main-header__brand {
     text-decoration: none;
     font-weight: bold;
 }
 
 #logo{
-    display:block;
+    display:inline-block;
     text-align: center;
 }
 #logo-img{
-    width:300px;
-    height:300px;
-    border:2px solid black;
+    width:18rem;
+    height:17rem;
+    border:  solid white 2px;
 }
 
 
@@ -70,13 +75,17 @@ abbr,acronym { border:0;
     display: block;
 }
 .main-nav__items{
+    display: inline-block;
     list-style: none; 
+    
 }
 #nav-left{
     float: left;
+    border: solid white 1px;
 }
 #nav-right{
     float: right;
+    border: solid white 1px;
 }
 .main-nav__item{
     display: inline-block;
@@ -84,7 +93,9 @@ abbr,acronym { border:0;
 }
 .main-nav__item a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 .main-nav__item a:hover{
     font-weight: bold;
@@ -92,6 +103,22 @@ abbr,acronym { border:0;
 .main-nav__item a:active{
     font-weight: bold;
 }
+
+footer{
+    background-color: black;
+}
+
+.footer-section{
+    display: inline-block;
+    color: white;
+}
+#footer-logo{
+    width: 15rem;
+    height:15 rem;
+}
+
+
+
 
 
 .mobile-nav {

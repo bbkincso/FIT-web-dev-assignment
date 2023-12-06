@@ -1,144 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Home Page</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="index.css">
-        <script src="index.js" defer></script>
-    </head>
-    <body>
-        <header class="main-header">
-            <div id="logo">
-                <a href="index.html" class="main-header__brand">
-                    <img id="logo-img" src="images/logo.jpg" alt="Smiley face">
-                </a>
-            </div>
-            <!-- <button id="mobile-menu-button">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- <button id="mobile-menu-button">
                 <div class="settings-button-bar"></div>
                 <div class="settings-button-bar"></div>
                 <div class="settings-button-bar"></div>
             </button> -->
-            <nav class="main-nav">
-                <div id="nav-left" style="background-color: lightblue;">
-                    <ul class="main-nav__items">
-                        <li class="main-nav__item"><a href="index.html">Home</a></li>
-                        <li class="main-nav__item"><a href="events.html">Events</a></li>
-                        <li class="main-nav__item"><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div id="nav-right" style="background-color: lightcoral;">
+      <nav class="main-nav">
+        <ul class="main-nav__items" id="nav-left">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-header__brand"
+              ><img id="logo-img" src="images/logo_white_shadow.png" alt=""
+            /></a>
+          </li>
+          <li class="main-nav__item"><a href="index.html">Home</a></li>
+          <li class="main-nav__item"><a href="events.html">Events</a></li>
+          <li class="main-nav__item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
 
-                    <ul class="main-nav__items">
-                        <li class="main-nav__item"><a href="shop.html">Shop</a></li>
-                        <li class="main-nav__item"><a href="cart.html">Cart</a></li>
-                    </ul>
-                </div>
-                
-            </nav>
-            
-        </header>
-        <nav class="mobile-nav">
-            <ul id="mobile-nav__items">
-                <li class="mobile-nav__item"><a href="index.html">Home</a></li>
-                <li class="mobile-nav__item"><a href="events.html">Events</a></li>
-                <li class="mobile-nav__item"><a href="contact.html">Contact Us</a></li>
-                <li class="mobile-nav__item"><a href="shop.html">Shop</a></li>
-                <li class="mobile-nav__item"><a href="cart.html">Cart</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section>
-                <h1>About Us</h1>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                     Semper auctor neque vitae tempus. 
-                    Felis eget nunc lobortis mattis aliquam faucibus. Elit ut aliquam purus sit amet. Volutpat ac tincidunt vitae semper quis lectus nulla at. 
-                    Facilisis sed odio morbi quis commodo odio aenean sed adipiscing. 
-                    Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Malesuada proin libero nunc consequat. 
-                    Velit ut tortor pretium viverra suspendisse potenti nullam. </p>
-                    <p>Magna fermentum iaculis eu non diam phasellus vestibulum. 
-                        Mollis nunc sed id semper risus in. Faucibus vitae aliquet nec ullamcorper. 
-                        Id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti. 
-                        Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. 
-                        Est ante in nibh mauris. Enim facilisis gravida neque convallis a cras semper auctor neque. </p>
-                    <p>Ipsum consequat nisl vel pretium lectus quam id.
-                         Donec adipiscing tristique risus nec feugiat in fermentum posuere. 
-                         Neque gravida in fermentum et sollicitudin ac. Non consectetur a erat nam at lectus urna. 
-                         Pharetra magna ac placerat vestibulum lectus. Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-                         Lacus sed turpis tincidunt id aliquet. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. 
-                         Viverra justo nec ultrices dui sapien eget mi.</p>
-            </section>
-            <section>
-                <figure>
-                    <img src="" alt="">
-                  </figure>
-            </section>
-            <form>
-                <form id="my-form" action="" novalidate>
-                    <ul class="flex-outer">
-                        <li>
-                            <div id="name-error" class="errorSign"></div>
-                            <label for="full-name">Full Name:</label>
-                            <input required id="full-name" type="text" name="full-name" />
-                        </li>
-                        <li>
-                            <div class="errorSign" id="email-error"></div>
-                            <label for="email">Email address:</label>
-                            <input required id="email" type="email" name="email_address" />
-                        </li>
-                        <li>
-                            <div class="errorSign" id="phone-error"></div>
-                            <label for="phone">Phone number:</label>
-                            <input required id="phone" type="phone" name="phone" />
-                        </li>
-                        <li>
-                            <div class="errorSign" id="date-error"></div>
-                            <label for="bookDate">Date:</label>
-                            <input  required="date" id="bookDate" name="bookDate">
-                        </li>
-                        <li>
-                            <div class="errorSign" id="ticket-error"></div>
-                            <p class="contact-p">Tickets</p>
-                            <ul class="flex-inner">
-                                <li>
-                                    <label for="children-ticket">Age 6 - 18:</Label>
-                                    <input required type="number" 
-                                            name="children-ticket" id="children-ticket"  
-                                            min="0" max="6" placeholder="0">
-                                </li>
-                                <li>
-                                    <label for="adult-ticket">Age 18 - 65:</Label>
-                                    <input required type="number" 
-                                            name="adult-ticket" id="adult-ticket"  
-                                            min="0" max="6" placeholder="0">
-                                </li>
-                                <li>
-                                    <label for="over65-ticket">Age 65 -:</Label>
-                                    <input required type="number" 
-                                            name="over65-ticket" id="over65-ticket"  
-                                            min="0" max="6" placeholder="0">
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <textarea id="extraInfo" name="extraInfo" placeholder="Special Requirements"></textarea>
-                        </li>
-                        <li>
-                            <button id="my-button" type="submit">Submit</button>
-                        </li>
-                    </ul>
-                </form>
-                <div>
-                    <p class="contact-p">For further information please feel free to <a href="mailto:balloons@example.com">send us an email</a></p>
-                </div>
-            </form>
+        <ul class="main-nav__items" id="nav-right">
+          <li class="main-nav__item"><a href="shop.html">Shop</a></li>
+          <li class="main-nav__item"><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        </main>
-        
-        <footer>
+    <nav class="mobile-nav">
+      <ul id="mobile-nav__items">
+        <li class="mobile-nav__item"><a href="index.html">Home</a></li>
+        <li class="mobile-nav__item"><a href="events.html">Events</a></li>
+        <li class="mobile-nav__item"><a href="contact.html">Contact Us</a></li>
+        <li class="mobile-nav__item"><a href="shop.html">Shop</a></li>
+        <li class="mobile-nav__item"><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h1>Our History</h1>
 
-        </footer>
-        
-    </body>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper
+          auctor neque vitae tempus. Felis eget nunc lobortis mattis aliquam
+          faucibus. Elit ut aliquam purus sit amet. Volutpat ac tincidunt vitae
+          semper quis lectus nulla at. Facilisis sed odio morbi quis commodo
+          odio aenean sed adipiscing. Sit amet mauris commodo quis imperdiet
+          massa tincidunt nunc. Malesuada proin libero nunc consequat. Velit ut
+          tortor pretium viverra suspendisse potenti nullam.
+        </p>
+        <p>
+          Magna fermentum iaculis eu non diam phasellus vestibulum. Mollis nunc
+          sed id semper risus in. Faucibus vitae aliquet nec ullamcorper. Id
+          interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium
+          viverra suspendisse potenti. Amet aliquam id diam maecenas ultricies
+          mi eget mauris pharetra. Est ante in nibh mauris. Enim facilisis
+          gravida neque convallis a cras semper auctor neque.
+        </p>
+        <p>
+          Ipsum consequat nisl vel pretium lectus quam id. Donec adipiscing
+          tristique risus nec feugiat in fermentum posuere. Neque gravida in
+          fermentum et sollicitudin ac. Non consectetur a erat nam at lectus
+          urna. Pharetra magna ac placerat vestibulum lectus. Lorem ipsum dolor
+          sit amet consectetur adipiscing elit. Lacus sed turpis tincidunt id
+          aliquet. Interdum velit euismod in pellentesque massa placerat duis
+          ultricies lacus. Viverra justo nec ultrices dui sapien eget mi.
+        </p>
+      </section>
+      <section>
+        <figure>
+          <img src="" alt="" />
+        </figure>
+      </section>
+      <form>
+        <form id="my-form" action="" novalidate>
+          <ul class="flex-outer">
+            <li>
+              <div id="name-error" class="errorSign"></div>
+              <label for="full-name">Full Name:</label>
+              <input required id="full-name" type="text" name="full-name" />
+            </li>
+            <li>
+              <div class="errorSign" id="email-error"></div>
+              <label for="email">Email address:</label>
+              <input required id="email" type="email" name="email_address" />
+            </li>
+            <li>
+              <div class="errorSign" id="phone-error"></div>
+              <label for="phone">Phone number:</label>
+              <input required id="phone" type="phone" name="phone" />
+            </li>
+            <li>
+              <div class="errorSign" id="date-error"></div>
+              <label for="bookDate">Date:</label>
+              <input required="date" id="bookDate" name="bookDate" />
+            </li>
+            <li>
+              <div class="errorSign" id="ticket-error"></div>
+              <p class="contact-p">Tickets</p>
+              <ul class="flex-inner">
+                <li>
+                  <label for="children-ticket">Age 6 - 18:</label>
+                  <input
+                    required
+                    type="number"
+                    name="children-ticket"
+                    id="children-ticket"
+                    min="0"
+                    max="6"
+                    placeholder="0"
+                  />
+                </li>
+                <li>
+                  <label for="adult-ticket">Age 18 - 65:</label>
+                  <input
+                    required
+                    type="number"
+                    name="adult-ticket"
+                    id="adult-ticket"
+                    min="0"
+                    max="6"
+                    placeholder="0"
+                  />
+                </li>
+                <li>
+                  <label for="over65-ticket">Age 65 -:</label>
+                  <input
+                    required
+                    type="number"
+                    name="over65-ticket"
+                    id="over65-ticket"
+                    min="0"
+                    max="6"
+                    placeholder="0"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <textarea
+                id="extraInfo"
+                name="extraInfo"
+                placeholder="Special Requirements"
+              ></textarea>
+            </li>
+            <li>
+              <button id="my-button" type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+        <div>
+          <p class="contact-p">
+            For further information please feel free to
+            <a href="mailto:balloons@example.com">send us an email</a>
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <section class="footer-section">
+        <ul>
+          <li>Address:</li>
+          <li>Tel:</li>
+          <li>Email:</li>
+        </ul>
+      </section>
+      <section class="footer-section">
+        <img id="footer-logo" src="images/logo_white_shadow.png" alt="" />
+      </section>
+      <section class="footer-section">
+        <ul>
+          <li>Opening Hours</li>
+          <li>Mon - Fri:</li>
+          <li>Saturday:</li>
+          <li>Sunday:</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>
