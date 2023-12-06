@@ -43,8 +43,7 @@ abbr,acronym { border:0;
 /* Style for header */
 .main-header{
     width: 100%;
-    height: 10rem;
-    background-color: lightblue;
+    height: 20rem;
     padding: 1rem;
 }
 
@@ -56,12 +55,28 @@ abbr,acronym { border:0;
     font-weight: bold;
 }
 
-.main-nav{
-    display: inline-block;
+#logo{
+    display:block;
+    text-align: center;
 }
-.main-nav__item{
-    list-style: none;
-    
+#logo-img{
+    width:300px;
+    height:300px;
+    border:2px solid black;
+}
+
+
+.main-nav{
+    display: block;
+}
+.main-nav__items{
+    list-style: none; 
+}
+#nav-left{
+    float: left;
+}
+#nav-right{
+    float: right;
 }
 .main-nav__item{
     display: inline-block;

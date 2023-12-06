@@ -1,0 +1,56 @@
+#my-form {
+    padding-top: 2em;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 15px;
+    width: 50%;
+    margin: auto;
+  
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+    
+  }
+  
+  .flex-outer li button {
+      margin-left: auto;
+      padding: 8px 16px;
+      border: none;
+      background: #D9EECE;
+      color: #226800;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      border-radius: 2px;
+    }
+  
+    .flex-inner li {
+      width: 100px;
+    }
+  
+    .flex-inner {
+      justify-content: space-evenly;
+    }
+  
+    textarea{
+      min-height: 10em;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    textarea:focus, input:focus{
+      outline: none;
+    }
