@@ -14,7 +14,6 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <div class="background"></div>
     <header class="main-header">
       <!-- <button id="mobile-menu-button">
                 <div class="settings-button-bar"></div>
@@ -43,7 +42,7 @@
       </nav>
     </header>
 
-    <nav class="mobile-nav">
+    <!-- <nav class="mobile-nav">
       <ul id="mobile-nav__items">
         <li class="mobile-nav__item"><a href="index.html">Home</a></li>
         <li class="mobile-nav__item"><a href="events.html">Events</a></li>
@@ -51,12 +50,13 @@
         <li class="mobile-nav__item"><a href="shop.html">Shop</a></li>
         <li class="mobile-nav__item"><a href="cart.html">Cart</a></li>
       </ul>
-    </nav>
-    <main id="index-main">
-        <div class="divider"></div>
+    </nav> -->
+
+
+
+      <div class="divider"></div>
       <section id="history">
         <h1>Our History</h1>
-
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper
@@ -85,93 +85,96 @@
           ultricies lacus. Viverra justo nec ultrices dui sapien eget mi.
         </p>
       </section>
-
-      <form id="booking-form">
-        <!-- < id="my-form" action="" novalidate> -->
-        <ul class="flex-outer">
-          <li>
-            <div id="name-error" class="errorSign"></div>
-            <label for="full-name">Full Name:</label>
-            <input required id="full-name" type="text" name="full-name" />
-          </li>
-          <li>
-            <div class="errorSign" id="email-error"></div>
-            <label for="email">Email address:</label>
-            <input required id="email" type="email" name="email_address" />
-          </li>
-          <li>
-            <div class="errorSign" id="phone-error"></div>
-            <label for="phone">Phone number:</label>
-            <input required id="phone" type="phone" name="phone" />
-          </li>
-          <li>
-            <div class="errorSign" id="date-error"></div>
-            <label for="bookDate">Date:</label>
-            <input required="date" id="bookDate" name="bookDate" />
-          </li>
-          <li>
-            <div class="errorSign" id="ticket-error"></div>
-            <p class="contact-p">Tickets</p>
-            <ul class="flex-inner">
-              <li>
-                <label for="children-ticket">Age 6 - 18:</label>
-                <input
-                  required
-                  type="number"
-                  name="children-ticket"
-                  id="children-ticket"
-                  min="0"
-                  max="6"
-                  placeholder="0"
-                />
-              </li>
-              <li>
-                <label for="adult-ticket">Age 18 - 65:</label>
-                <input
-                  required
-                  type="number"
-                  name="adult-ticket"
-                  id="adult-ticket"
-                  min="0"
-                  max="6"
-                  placeholder="0"
-                />
-              </li>
-              <li>
-                <label for="over65-ticket">Age 65 -:</label>
-                <input
-                  required
-                  type="number"
-                  name="over65-ticket"
-                  id="over65-ticket"
-                  min="0"
-                  max="6"
-                  placeholder="0"
-                />
-              </li>
-            </ul>
-          </li>
-          <li>
-            <textarea
-              id="extraInfo"
-              name="extraInfo"
-              placeholder="Special Requirements"
-            ></textarea>
-          </li>
-          <li>
-            <button id="my-button" type="submit">Submit</button>
-          </li>
-        </ul>
-
-        <div>
-          <p class="contact-p">
-            For further information please feel free to
-            <a href="mailto:balloons@example.com">send us an email</a>
-          </p>
-        </div>
-      </form>
+      <section class="background"></section>
+      <section id="form-block">
+        <form id="booking-form">
+          <!-- < id="my-form" action="" novalidate> -->
+          <ul class="flex-outer">
+            <li>
+              <div id="name-error" class="errorSign"></div>
+              <label for="full-name">Full Name:</label>
+              <input required id="full-name" type="text" name="full-name" />
+            </li>
+            <li>
+              <div class="errorSign" id="email-error"></div>
+              <label for="email">Email address:</label>
+              <input required id="email" type="email" name="email_address" />
+            </li>
+            <li>
+              <div class="errorSign" id="phone-error"></div>
+              <label for="phone">Phone number:</label>
+              <input required id="phone" type="phone" name="phone" />
+            </li>
+            <li>
+              <div class="errorSign" id="date-error"></div>
+              <label for="bookDate">Date:</label>
+              <input required="date" id="bookDate" name="bookDate" />
+            </li>
+            
+            <li>
+              <div class="errorSign" id="ticket-error"></div>
+              <p class="contact-p">Tickets</p>
+              <ul class="flex-inner">
+                <li>
+                  <label for="children-ticket">Age 6 - 18:</label>
+                  <input
+                    required
+                    type="number"
+                    name="children-ticket"
+                    id="children-ticket"
+                    min="0"
+                    max="6"
+                    placeholder="0"
+                  />
+                </li>
+                <li>
+                  <label for="adult-ticket">Age 18 - 65:</label>
+                  <input
+                    required
+                    type="number"
+                    name="adult-ticket"
+                    id="adult-ticket"
+                    min="0"
+                    max="6"
+                    placeholder="0"
+                  />
+                </li>
+                <li>
+                  <label for="over65-ticket">Age 65 -:</label>
+                  <input
+                    required
+                    type="number"
+                    name="over65-ticket"
+                    id="over65-ticket"
+                    min="0"
+                    max="6"
+                    placeholder="0"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <textarea
+                id="extraInfo"
+                name="extraInfo"
+                placeholder="Special Requirements"
+              ></textarea>
+            </li>
+            <li>
+              <button id="my-button" type="submit">Submit</button>
+            </li>
+          </ul>
+  
+          <div>
+            <p class="contact-p">
+              For further information please feel free to
+              <a href="mailto:balloons@example.com">send us an email</a>
+            </p>
+          </div>
+        </form>
+      </section>
+      
       <div class="divider"></div>
-    </main>
 
     <footer>
       <section class="footer-section">

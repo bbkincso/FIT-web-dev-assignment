@@ -1,9 +1,41 @@
-.background{
-  background: url("images/Facade.jpg");
-  width: 100%;
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
   height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.background{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+}
+
+.background::before{
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url("images/Facade.jpg") top center;
+  background-size: cover;
+  transform: translateZ(-.5px) scale(1.6);
   z-index: -1;
-  position: fixed;
 }
 .divider{
   height: 0.7rem;
@@ -15,10 +47,13 @@ h1{
   margin-bottom: 2rem;
 }
 #history{
+  position: relative;
+  transform-style: inherit;
   padding:5rem 15rem 7rem 15rem;
   background-color: rgb(3, 9, 24);
   color: white;
-  margin-bottom: 0rem;
+  box-shadow: 0 0 40px #000000;
+  z-index: 1;
 }
 
 #history p {
@@ -26,10 +61,16 @@ h1{
   font-weight: lighter;
   padding-bottom: 1rem;
 }
+
 #booking-form{
   background-color: rgb(3, 9, 24);
   color: white;
-  margin-top: 20rem;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+  box-shadow: 0 0 40px #000000;
+  z-index: 1;
 }
 #my-form {
     padding-top: 2em;
