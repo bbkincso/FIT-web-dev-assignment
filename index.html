@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="shared.css" />
@@ -20,6 +20,7 @@
                 <div class="settings-button-bar"></div>
                 <div class="settings-button-bar"></div>
             </button> -->
+
       <nav class="main-nav">
         <ul class="main-nav__items" id="nav-left">
           <li class="main-nav__item">
@@ -50,8 +51,8 @@
         <li class="mobile-nav__item"><a href="cart.html">Cart</a></li>
       </ul>
     </nav>
-    <main>
-      <section>
+    <main id="index-main">
+      <section id="history">
         <h1>Our History</h1>
 
         <p>
@@ -82,88 +83,84 @@
           ultricies lacus. Viverra justo nec ultrices dui sapien eget mi.
         </p>
       </section>
-      <section>
-        <figure>
-          <img src="" alt="" />
-        </figure>
-      </section>
-      <form>
-        <form id="my-form" action="" novalidate>
-          <ul class="flex-outer">
-            <li>
-              <div id="name-error" class="errorSign"></div>
-              <label for="full-name">Full Name:</label>
-              <input required id="full-name" type="text" name="full-name" />
-            </li>
-            <li>
-              <div class="errorSign" id="email-error"></div>
-              <label for="email">Email address:</label>
-              <input required id="email" type="email" name="email_address" />
-            </li>
-            <li>
-              <div class="errorSign" id="phone-error"></div>
-              <label for="phone">Phone number:</label>
-              <input required id="phone" type="phone" name="phone" />
-            </li>
-            <li>
-              <div class="errorSign" id="date-error"></div>
-              <label for="bookDate">Date:</label>
-              <input required="date" id="bookDate" name="bookDate" />
-            </li>
-            <li>
-              <div class="errorSign" id="ticket-error"></div>
-              <p class="contact-p">Tickets</p>
-              <ul class="flex-inner">
-                <li>
-                  <label for="children-ticket">Age 6 - 18:</label>
-                  <input
-                    required
-                    type="number"
-                    name="children-ticket"
-                    id="children-ticket"
-                    min="0"
-                    max="6"
-                    placeholder="0"
-                  />
-                </li>
-                <li>
-                  <label for="adult-ticket">Age 18 - 65:</label>
-                  <input
-                    required
-                    type="number"
-                    name="adult-ticket"
-                    id="adult-ticket"
-                    min="0"
-                    max="6"
-                    placeholder="0"
-                  />
-                </li>
-                <li>
-                  <label for="over65-ticket">Age 65 -:</label>
-                  <input
-                    required
-                    type="number"
-                    name="over65-ticket"
-                    id="over65-ticket"
-                    min="0"
-                    max="6"
-                    placeholder="0"
-                  />
-                </li>
-              </ul>
-            </li>
-            <li>
-              <textarea
-                id="extraInfo"
-                name="extraInfo"
-                placeholder="Special Requirements"
-              ></textarea>
-            </li>
-            <li>
-              <button id="my-button" type="submit">Submit</button>
-            </li>
-          </ul>
-        </form>
+
+      <form id="booking-form">
+        < id="my-form" action="" novalidate>
+        <ul class="flex-outer">
+          <li>
+            <div id="name-error" class="errorSign"></div>
+            <label for="full-name">Full Name:</label>
+            <input required id="full-name" type="text" name="full-name" />
+          </li>
+          <li>
+            <div class="errorSign" id="email-error"></div>
+            <label for="email">Email address:</label>
+            <input required id="email" type="email" name="email_address" />
+          </li>
+          <li>
+            <div class="errorSign" id="phone-error"></div>
+            <label for="phone">Phone number:</label>
+            <input required id="phone" type="phone" name="phone" />
+          </li>
+          <li>
+            <div class="errorSign" id="date-error"></div>
+            <label for="bookDate">Date:</label>
+            <input required="date" id="bookDate" name="bookDate" />
+          </li>
+          <li>
+            <div class="errorSign" id="ticket-error"></div>
+            <p class="contact-p">Tickets</p>
+            <ul class="flex-inner">
+              <li>
+                <label for="children-ticket">Age 6 - 18:</label>
+                <input
+                  required
+                  type="number"
+                  name="children-ticket"
+                  id="children-ticket"
+                  min="0"
+                  max="6"
+                  placeholder="0"
+                />
+              </li>
+              <li>
+                <label for="adult-ticket">Age 18 - 65:</label>
+                <input
+                  required
+                  type="number"
+                  name="adult-ticket"
+                  id="adult-ticket"
+                  min="0"
+                  max="6"
+                  placeholder="0"
+                />
+              </li>
+              <li>
+                <label for="over65-ticket">Age 65 -:</label>
+                <input
+                  required
+                  type="number"
+                  name="over65-ticket"
+                  id="over65-ticket"
+                  min="0"
+                  max="6"
+                  placeholder="0"
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <textarea
+              id="extraInfo"
+              name="extraInfo"
+              placeholder="Special Requirements"
+            ></textarea>
+          </li>
+          <li>
+            <button id="my-button" type="submit">Submit</button>
+          </li>
+        </ul>
+
         <div>
           <p class="contact-p">
             For further information please feel free to

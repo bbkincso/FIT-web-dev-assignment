@@ -1,3 +1,22 @@
+#index-main{
+  background: url("images/Facade.jpg");
+  z-index: 0;
+}
+#history{
+  background-color: black;
+  color: white;
+  margin-bottom: 20rem;
+  z-index: 1;
+}
+#booking-form{
+  background-color: black;
+  color: white;
+  margin-top: 20rem;
+  z-index: 1;
+}
+
+
+
 #my-form {
     padding-top: 2em;
   }
