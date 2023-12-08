@@ -28,7 +28,7 @@
               ><img id="logo-img" src="images/logo_white_shadow.png" alt=""
             /></a>
           </li>
-          <li class="main-nav__item"><a href="index.html">Home</a></li>
+          <li class="main-nav__item"><a href="index.html" id="active">Home</a></li>
           <li class="main-nav__item"><a href="events.html">Events</a></li>
           <li class="main-nav__item">
             <a href="contact.html">Contact Us</a>
@@ -86,38 +86,31 @@
         </p>
       </section>
       <section class="background"></section>
-      <section id="form-block">
         <form id="booking-form">
-          <!-- < id="my-form" action="" novalidate> -->
           <ul class="flex-outer">
+
+
+            <li><h2>Book a table</h2></li>
             <li>
-              <div id="name-error" class="errorSign"></div>
-              <label for="full-name">Full Name:</label>
-              <input required id="full-name" type="text" name="full-name" />
+              <!-- <div id="name-error" class="errorSign"></div> -->
+              <input required id="full-name" type="text" name="full-name" placeholder="Name*"/>
             </li>
             <li>
-              <div class="errorSign" id="email-error"></div>
-              <label for="email">Email address:</label>
-              <input required id="email" type="email" name="email_address" />
+              <!-- <div class="errorSign" id="phone-error" placeholder="Phone*"></div> -->
+              <input required id="phone" type="phone" name="phone" placeholder="Phone*"/>
             </li>
             <li>
-              <div class="errorSign" id="phone-error"></div>
-              <label for="phone">Phone number:</label>
-              <input required id="phone" type="phone" name="phone" />
+              <!-- <div class="errorSign" id="email-error"></div> -->
+              <input required id="email" type="email" name="email_address" placeholder="Email*" />
             </li>
             <li>
-              <div class="errorSign" id="date-error"></div>
-              <label for="bookDate">Date:</label>
-              <input required="date" id="bookDate" name="bookDate" />
+              <!-- <div class="errorSign" id="date-error"></div> -->
+              <input required="date" id="bookDate" name="bookDate" placeholder="Date*"/>
             </li>
             
             <li>
-              <div class="errorSign" id="ticket-error"></div>
-              <p class="contact-p">Tickets</p>
-              <ul class="flex-inner">
-                <li>
-                  <label for="children-ticket">Age 6 - 18:</label>
-                  <input
+              <!-- <div class="errorSign" id="ticket-error"></div> -->
+              <input
                     required
                     type="number"
                     name="children-ticket"
@@ -125,63 +118,26 @@
                     min="0"
                     max="6"
                     placeholder="0"
-                  />
-                </li>
-                <li>
-                  <label for="adult-ticket">Age 18 - 65:</label>
-                  <input
-                    required
-                    type="number"
-                    name="adult-ticket"
-                    id="adult-ticket"
-                    min="0"
-                    max="6"
-                    placeholder="0"
-                  />
-                </li>
-                <li>
-                  <label for="over65-ticket">Age 65 -:</label>
-                  <input
-                    required
-                    type="number"
-                    name="over65-ticket"
-                    id="over65-ticket"
-                    min="0"
-                    max="6"
-                    placeholder="0"
-                  />
-                </li>
-              </ul>
-            </li>
-            <li>
-              <textarea
-                id="extraInfo"
-                name="extraInfo"
-                placeholder="Special Requirements"
-              ></textarea>
-            </li>
-            <li>
-              <button id="my-button" type="submit">Submit</button>
+                  />                
             </li>
           </ul>
-  
-          <div>
-            <p class="contact-p">
-              For further information please feel free to
-              <a href="mailto:balloons@example.com">send us an email</a>
-            </p>
-          </div>
+            <textarea
+              id="extraInfo"
+              name="extraInfo"
+              placeholder="Message"
+            ></textarea>
+            <button id="my-button" type="submit">Submit</button>
         </form>
-      </section>
       
       <div class="divider"></div>
 
     <footer>
       <section class="footer-section">
         <ul>
-          <li>Address:</li>
-          <li>Tel:</li>
-          <li>Email:</li>
+          <li><h3>Contact details</h3></li>
+          <li><p>Ipsum consequat Street, D2, Ireland</p></li>
+          <li><p>Tel:  +353 (0)1 111 2222</p></li>
+          <li><p>Email: three.broomstics@harrypotter.com</p></li>
         </ul>
       </section>
       <section class="footer-section">
@@ -189,10 +145,11 @@
       </section>
       <section class="footer-section">
         <ul>
-          <li>Opening Hours</li>
-          <li>Mon - Fri:</li>
-          <li>Saturday:</li>
-          <li>Sunday:</li>
+          <li><h3>Opening Hours</h3></li>
+          <li><p>Monday - Thursday: 10:30am-11pm</p></li>
+          <li><p>Friday: 10:30am-12:30am</p></li>
+          <li><p>Saturday: 10:30am-01:30am</p></li>
+          <li><p>Sunday: 11:30-11pm</p></li>
         </ul>
       </section>
     </footer>

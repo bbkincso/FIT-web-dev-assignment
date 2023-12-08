@@ -2,23 +2,61 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Contact Us</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Contact Us Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="shared.css">
+        <link rel="stylesheet" href="contact.css" />
     </head>
     <body>
-        <header>
-            <h1>Contact Us</h1>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
+        <header class="main-header">
+            <nav class="main-nav">
+              <ul class="main-nav__items" id="nav-left">
+                <li class="main-nav__item">
+                  <a href="index.html" class="main-header__brand"
+                    ><img id="logo-img" src="images/logo_white_shadow.png" alt=""
+                  /></a>
+                </li>
+                <li class="main-nav__item"><a href="index.html" id="active">Home</a></li>
+                <li class="main-nav__item"><a href="events.html">Events</a></li>
+                <li class="main-nav__item">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+      
+              <ul class="main-nav__items" id="nav-right">
+                <li class="main-nav__item"><a href="shop.html">Shop</a></li>
+                <li class="main-nav__item"><a href="cart.html">Cart</a></li>
+              </ul>
+            </nav>
         </header>
-        
+        <div class="divider"></div>
+
+
+
+        <div class="divider"></div>
         <footer>
-            
+            <section class="footer-section">
+                <ul>
+                  <li><h3>Contact details</h3></li>
+                  <li><p>Ipsum consequat Street, D2, Ireland</p></li>
+                  <li><p>Tel:  +353 (0)1 111 2222</p></li>
+                  <li><p>Email: three.broomstics@harrypotter.com</p></li>
+                </ul>
+              </section>
+              <section class="footer-section">
+                <img id="footer-logo" src="images/logo_white_shadow.png" alt="" />
+              </section>
+              <section class="footer-section">
+                <ul>
+                  <li><h3>Opening Hours</h3></li>
+                  <li><p>Monday - Thursday: 10:30am-11pm</p></li>
+                  <li><p>Friday: 10:30am-12:30am</p></li>
+                  <li><p>Saturday: 10:30am-01:30am</p></li>
+                  <li><p>Sunday: 11:30-11pm</p></li>
+                </ul>
+              </section>
         </footer>
         
     </body>

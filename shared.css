@@ -1,3 +1,4 @@
+/* stylesheet reset default values */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
     margin:0;
     padding:0;
@@ -38,12 +39,37 @@ q:before,q:after {
 }
 abbr,acronym { border:0;
 }
-
-
-
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.divider{
+    height: 0.7rem;
+    background-color: rgb(91, 121, 160);
+  }
+
 /* Style for header */
 .main-header{
     width: 100%;
@@ -55,36 +81,36 @@ abbr,acronym { border:0;
     font-weight: bold;
 }
 #logo-img{
-    width:14rem;
-    height:12rem;
+    width:10rem;
+    height:10rem;
+    margin-right: 2.5rem;
 }
 .main-nav{
     display: block;
     width: 100%;
     height: 35rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
     background-clip: text;
     color: transparent;
     position: relative;
-    padding-top: 2rem;
+    padding: 2.5rem 3rem 0 2.5rem;
 }
 .main-nav__items{
     display: inline-block;
     list-style: none; 
-    
 }
 #nav-left{
     float: left;
-    
+    display: flex;
 }
 #nav-right{
     float: right;
+    display: flex;
 }
 .main-nav__item{
-    display: inline-block;
+    display: flex;
     margin: 0 1rem; 
-    vertical-align: top;
-    
+    vertical-align: top;   
 }
 .main-nav__item a{
     text-decoration: none;
@@ -95,29 +121,42 @@ abbr,acronym { border:0;
     font-weight: bold;
     font-size: 1.8rem;
 }
-.main-nav__item a:active{
-    font-weight:bolder;
-    font-size: 1.8rem;
-}
 
 footer{
     background-color: rgb(3, 9, 24);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:4rem 0;
 }
-
 .footer-section{
-    display: inline-block;
-    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    width:22rem;
+    height: 22rem;
+
 }
 #footer-logo{
-    width: 15rem;
-    height:15 rem;
+    width:100%;
+    height: 100%;
+}
+footer h3{
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: rgb(91, 121, 160);
+    margin-top: 3rem;
+}
+footer p {
+    color: white;
+    margin-top: 1rem;
+    font-weight: lighter;
 }
 
 
 
 
 
-.mobile-nav {
+/* .mobile-nav {
     display:none;
     position: fixed;
     z-index: 101;
@@ -142,6 +181,5 @@ footer{
 
 .mobile-nav__item a {
     font-size: 1.5rem;
-}
-
+} */
 
