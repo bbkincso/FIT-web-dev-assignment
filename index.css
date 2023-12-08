@@ -40,7 +40,6 @@ h1{
 #booking-form{
   padding: 5rem;
   background-color: rgb(3, 9, 24);
-  color: white;
   position: relative;
   transform-style: inherit;
   box-shadow: 0 0 40px #000000;
@@ -53,7 +52,10 @@ h2{
   font-weight: lighter;
 }
 #booking-form input, textarea{
-  background-color: rgb(91, 121, 160);
+  background-color: rgb(62, 90, 129);
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 input::placeholder{
@@ -61,15 +63,11 @@ input::placeholder{
   font-size: 1rem;
   font-weight: bolder;
 }
-input{
-  color:rgb(3, 9, 24);
-  font-weight: bolder;
-  font-size: 1rem;
-}
+
   
 
 
-  .flex-outer li{
+  /* .flex-outer li{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -98,7 +96,7 @@ input{
       text-transform: uppercase;
       letter-spacing: .09em;
       border-radius: 2px;
-    }
+    } */
   
   
     textarea{
@@ -106,10 +104,7 @@ input{
       display: block;
       width: 100%;
       box-sizing: border-box;
-      color:rgb(3, 9, 24);
-      color:rgb(3, 9, 24);
-      font-size: 1rem;
-      font-weight: bolder;
+      
     }
     textarea::placeholder{
       color:rgb(3, 9, 24);
@@ -119,5 +114,15 @@ input{
   
     textarea:focus, input:focus{
       outline: none;
+    }
+    #my-button{
+      border-radius: 5px; 
+      border: solid rgb(91, 121, 160) 2px;
+      background-color: rgb(3, 9, 24);
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
     }
 
