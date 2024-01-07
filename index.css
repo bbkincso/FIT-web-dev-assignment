@@ -89,7 +89,15 @@ input::placeholder{
     textarea:focus, input:focus{
       outline: none;
     }
-    #my-button{
+    .confirm-booking{
+      display: none;
+      color: white;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    #booking-button{
       border-radius: 5px; 
       border: solid rgb(93, 151, 213) 2px;
       background-color: rgb(3, 9, 24);
@@ -98,7 +106,6 @@ input::placeholder{
       font-weight: bolder;
       margin-top: 1rem;
       padding: 0.5rem 1rem;
-      float: right;
     }
 
     /*view for smaller device */

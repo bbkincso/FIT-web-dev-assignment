@@ -39,6 +39,9 @@ q:before,q:after {
 }
 abbr,acronym { border:0;
 }
+
+/* ******************************************** */
+
 *{
     font-family: 'Montserrat', sans-serif;
 }
@@ -76,6 +79,39 @@ body {
     height: 40rem;
     background: url("images/bar-banner.png");
 }  
+.main-nav,
+.toggle-button-container{
+    width: 100%;
+    height: 40rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+    position: relative;
+    padding: 2.5rem 3rem 0 2.5rem;
+}
+.toggle-button-container{
+    display: block;
+}
+.main-nav{
+    display: none;
+}
+.toggle-button{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 0 0 0;
+}
+.toggle-button:focus{
+    outline: none;
+}
+
+.toggle-button__bar{
+    width: 100%;
+    height: 0.2rem;
+    background: white;
+    display: block;
+    margin:0.6rem 0;
+}
 .main-header__brand {
     text-decoration: none;
     font-weight: bold;
@@ -85,14 +121,7 @@ body {
     height:10rem;
     margin-right: 2.5rem;
 }
-.main-nav{
-    display: block;
-    width: 100%;
-    height: 40rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
-    position: relative;
-    padding: 2.5rem 3rem 0 2.5rem;
-}
+
 .main-nav__items{
     display: inline-block;
     list-style: none; 
@@ -110,16 +139,59 @@ body {
     margin: 0 1rem; 
     vertical-align: top;   
 }
-.main-nav__item a{
+.main-nav__item a,
+.mobile-nav__item a{
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
 }
-.main-nav__item a:hover{
+.main-nav__item a:hover,
+.main-nav__item a.active,
+.mobile-nav__item a:hover,
+.mobile-nav__item a.active{
     font-weight: bold;
     font-size: 1.8rem;
+
+}
+.backdrop{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.5);
+}
+.mobile-nav {
+    display:none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: rgb(3, 9, 24);
+    width: 50%;
+    height: 40rem;
+    padding:5rem 0 0 4%;
 }
 
+.mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    text-align: centre;
+}
+
+
+.mobile-nav__item{
+    margin-bottom: 2rem;
+}
+
+.mobile-nav__item a {
+    font-size: 1.5rem;
+}
 /* style for footer */
 footer{
     background-color: rgb(3, 9, 24);
@@ -158,6 +230,13 @@ footer p {
 /*view for smaller device */
 @media only screen and (min-width: 900px) {
 
+    .toggle-button-container{
+        display: none;
+    }
+    .main-nav{
+        display: block;
+    }
+
     /* footer */
     footer {
         flex-direction: row;
@@ -170,32 +249,4 @@ footer p {
     }
   }
 
-
-
-/* .mobile-nav {
-    display:none;
-    position: fixed;
-    z-index: 101;
-    top: 0;
-    left: 0;
-    background: lightblue;
-    width: 80%;
-    height: 100vh;
-}
-
-.mobile-nav__items {
-    width: 90%;
-    height: 100%;
-    list-style: none;
-    margin: 10% auto;
-    text-align: centre;
-}
-
-.mobile-nav__item{
-    margin:1rem 0;
-}
-
-.mobile-nav__item a {
-    font-size: 1.5rem;
-} */
 
