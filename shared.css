@@ -69,20 +69,25 @@ body {
 }
 
 .divider{
-    height: 0.7rem;
+    /* height: 0.7rem; */
+    height: 0.3rem;
     background-color: rgb(93, 151, 213);
   }
 
 /* Style for header */
 .main-header{
     width: 100%;
-    height: 40rem;
+    /* height: 40rem; */
+    height: 15rem;
     background: url("images/bar-banner.png");
+    /* background-size: ; */
+    background-size: cover;
 }  
 .main-nav,
 .toggle-button-container{
     width: 100%;
-    height: 40rem;
+    /* height: 40rem; */
+    height: 15rem;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
     position: relative;
     padding: 2.5rem 3rem 0 2.5rem;
@@ -94,8 +99,10 @@ body {
     display: none;
 }
 .toggle-button{
-    width: 2.5rem;
-    height: 2.5rem;
+    /* width: 2.5rem;
+    height: 2.5rem; */
+    width: 1.8rem;
+    height: 1.8rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -110,7 +117,9 @@ body {
     height: 0.2rem;
     background: white;
     display: block;
-    margin:0.6rem 0;
+    /* margin:0.6rem 0; */
+    margin:0.3rem 0;
+
 }
 .main-header__brand {
     text-decoration: none;
@@ -121,7 +130,7 @@ body {
     height:10rem;
     margin-right: 2.5rem;
 }
-
+/* navigation menu */
 .main-nav__items{
     display: inline-block;
     list-style: none; 
@@ -142,8 +151,9 @@ body {
 .main-nav__item a,
 .mobile-nav__item a{
     text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+    color: rgb(145, 184, 226);
+    /* font-size: 1.5rem; */
+    font-size: 0.7rem;
     font-weight: lighter;
     text-align: center;
 }
@@ -151,10 +161,11 @@ body {
 .main-nav__item a.active,
 .mobile-nav__item a:hover,
 .mobile-nav__item a.active{
-    font-weight: bold;
-    font-size: 1.8rem;
-
+    /* font-size: 1.8rem; */
+    font-size: 0.8rem;
+    color: white;
 }
+
 .backdrop{
     display: none;
     position: fixed;
@@ -172,8 +183,8 @@ body {
     top: 0;
     left: 0;
     background-color: rgb(3, 9, 24);
-    width: 50%;
-    height: 40rem;
+    width: 65%;
+    height: 100vh;
     padding:5rem 0 0 4%;
 }
 
@@ -183,52 +194,203 @@ body {
     list-style: none;
     text-align: centre;
 }
-
-
 .mobile-nav__item{
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 1rem;
 }
+/* table booking section */
+.booking{
+    /* padding:8rem 10%; */
+    padding:2.5rem 10%;
+    background-color: rgb(3, 9, 24);
+    position: relative;
+    transform-style: inherit;
+    box-shadow: 0 0 40px #000000;
+    z-index: 1;
+  }
+  .booking-form ul{
+    display: block;
+    /* width:100%;
+    margin: 0; */
+    width:80%;
+    margin:auto;
+  }
+  h2{
+    /* font-size: 1.5rem; */
+    font-size: 1.3rem;
+    color: rgb(93, 151, 213);
+    /* margin-bottom: 4rem; */
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+  }
+  .booking-form input, select{
+    background-color: rgb(93, 151, 213);
+    color: rgb(3, 9, 24);
+    /* font-size: 1rem; */
+    font-size: 0.7;
+    font-weight: bolder;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 1rem;
+    width: 100%;
+    outline: none;
+  }
+  .booking-form input::placeholder,
+  .booking-form textarea::placeholder,
+  .booking-form select::placeholder{
+    color:rgb(3, 9, 24);
+    font-size: 0.7rem;
+    font-weight: bolder;
+  }
+  
+  .booking-form textarea{
+    background-color: rgb(93, 151, 213);
+    color: rgb(3, 9, 24);
+    font-size: 0.7;
+    font-weight: bolder;
+    margin: 0 auto 1rem auto;
+    width: 80%;
+    /* min-height: 10rem; */
+    min-height: 5rem;
+    display: block;
+    box-sizing: border-box;  
+  }
 
-.mobile-nav__item a {
-    font-size: 1.5rem;
-}
+  .booking-form textarea:focus, input:focus{
+    outline: none;
+  }
+  .confirm-booking{
+    display: inline-block;
+    color: white;
+    font-size: 0.6rem;
+    /* margin-top: 1rem; */
+    margin-top: 0.5rem;
+    /* padding: 0.5rem 1rem; */
+    padding: 0.5rem 0;
+  }
+  .booking-button{
+    border-radius: 5px; 
+    border: solid rgb(93, 151, 213) 2px;
+    background-color: rgb(3, 9, 24);
+    color: white;
+    /* font-size: 1.2rem; */
+    font-size: 0.7rem;
+    font-weight: bolder;
+    /* margin-top: 1rem; */
+    /* padding: 0.5rem 1rem; */
+    padding: 0.2rem 0.5rem;
+    margin-left: 10%;
+  }
+
 /* style for footer */
 footer{
     background-color: rgb(3, 9, 24);
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding:4rem 0;
+    /* padding:4rem 0; */
+    padding:1rem 0;
+
     flex-direction: column;
 }
 .footer-section{
     display: flex;
-    margin-bottom: 5rem;
-    width: 90%;
+    margin: 1.5rem auto;
+    width: 80%;
     justify-content: center;
 }
 #footer-logo{
     width:100%;
     height: 100%;
-    min-width: 10rem;
-    min-height: 10rem;
-    max-width: 17rem;
-    max-height: 17rem;
+    padding:0 10%;
+    min-width: 5rem;
+    min-height: 5rem;
+    /* max-width: 17rem;
+    max-height: 17rem; */
+    max-width: 14rem;
+    max-height: 14rem;
+}
+
+footer ul {
+    width: 100%;
 }
 footer h3{
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
+    font-size: 1rem;
     font-weight: lighter;
     color: rgb(93, 151, 213);
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    margin-bottom: 0.5rem;
 }
 footer p {
     color: white;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    margin-top: 0.5rem;
     font-weight: lighter;
+    /* font-size: ; */
+    font-size: 0.7rem;
 }
 
-/*view for smaller device */
-@media only screen and (min-width: 900px) {
+
+/*view for medium screens size */
+@media only screen and (min-width: 540px) {
+
+    /* menu navigation */
+    .main-header,
+    .toggle-button-container{
+        height: 20rem;
+    }
+    .mobile-nav__item a
+    {
+        font-size: 1rem;
+    }
+    .mobile-nav__item a:hover,
+    .mobile-nav__item a.active{
+        font-size: 1.3rem;
+        color: white;
+    }
+    .mobile-nav {
+        width: 50%;
+    }
+    /* booking section */
+    .booking-button{
+        display: block;
+        font-size: 0.8;
+        padding: 0.3rem 0.7rem;
+    }
+    .confirm-booking{
+        font-size: 0.7rem;
+    }
+
+    /* footer */
+    footer {
+        flex-direction: row;
+        padding:1rem 5%;   
+        vertical-align: top; 
+
+       
+     }
+    #footer-logo{
+        min-width: 14rem;
+        min-height: 14rem;
+        max-width: 20rem;
+        max-height: 20rem;
+        /* padding: 1rem 0;  */
+    }
+    .footer-section{
+        /* width:30%; */
+        display: flex;
+        margin: auto;
+        flex-basis: 100%; 
+    }  
+    
+}
+
+
+
+
+/*view for larger screens size */
+@media only screen and (min-width: 768px) {
 
     .toggle-button-container{
         display: none;
@@ -236,6 +398,23 @@ footer p {
     .main-nav{
         display: block;
     }
+
+    /* booking section */
+    .booking-form{
+        max-width: 60rem;
+        margin: auto;
+      }
+      .booking-form ul{
+        display: inline-block;
+        /* width:48%; */
+      }
+      .booking-ul-left{
+        float: left;
+      }
+      .booking-ul-right{
+        float: right;
+      }
+      
 
     /* footer */
     footer {

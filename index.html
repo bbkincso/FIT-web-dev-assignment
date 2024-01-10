@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="index.css" />
     <script src="shared.js" defer></script>
   </head>
+
   <body>
     <div class="backdrop"></div>
     <header class="main-header">
@@ -93,10 +94,11 @@
       </p>
     </section>
     <section class="background"></section>
-    <section id="booking">
-      <form id="booking-form">
+
+    <section class="booking">
+      <form class="booking-form">
         <h2>Book a table</h2>
-        <ul id="booking-ul-left">
+        <ul class="booking-ul-left">
           <li>
             <input
               required
@@ -125,7 +127,7 @@
             />
           </li>
         </ul>
-        <ul id="booking-ul-right">
+        <ul class="booking-ul-right">
           <li>
             <input
               required
@@ -165,7 +167,7 @@
           placeholder="Message"
         ></textarea>
 
-        <button id="booking-button" type="submit">Send Request</button>
+        <button class="booking-button" type="submit">Send Request</button>
         <p class="confirm-booking">
           Thank you for sending a request! We will contact you soon.
         </p>
@@ -178,9 +180,16 @@
       <section class="footer-section">
         <ul>
           <li><h3>Contact details</h3></li>
-          <li><p>Ipsum consequat Street, D2, Ireland</p></li>
-          <li><p>Tel: +353 (0)1 111 2222</p></li>
-          <li><p>Email: three.broomstics@harrypotter.com</p></li>
+          <li>
+            <p>Address:</p>
+          </li>
+          <li>
+            <p>Ipsum consequat Street, D2, Ireland</p>
+          </li>
+          <li><p>Tel:</p></li>
+          <li><p>+353 (0)1 111 2222</p></li>
+          <li><p>Email:</p></li>
+          <li><p>three.broomstics@harrypotter.com</p></li>
         </ul>
       </section>
       <section class="footer-section">
