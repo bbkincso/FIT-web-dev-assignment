@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Shop</title>
+    <title>Cart Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,7 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="shared.css" />
-    <link rel="stylesheet" href="events.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <!-- <script src="index.js" defer></script> -->
   </head>
   <body>
     <div class="backdrop"></div>
@@ -33,26 +34,27 @@
             <a href="index.html">Home</a>
           </li>
           <li class="main-nav__item"><a href="events.html">Events</a></li>
-          <li class="main-nav__item"><a href="menu.html">Menu</a></li>
+          <li class="main-nav__item">
+            <a href="menu.html" class="active">Menu</a>
+          </li>
         </ul>
 
         <ul class="main-nav__items" id="nav-right">
           <li class="main-nav__item">
             <a href="contact.html">Contact Us</a>
           </li>
-          <li class="main-nav__item">
-            <a href="shop.html" class="active">Shop</a>
-          </li>
+          <li class="main-nav__item"><a href="shop.html">Shop</a></li>
         </ul>
       </nav>
     </header>
-
     <nav class="mobile-nav">
       <ul id="mobile-nav__items">
         <li class="mobile-nav__item">
           <a href="index.html">Home</a>
         </li>
-        <li class="mobile-nav__item"><a href="events.html">Events</a></li>
+        <li class="mobile-nav__item">
+          <a href="events.html">Events</a>
+        </li>
         <li class="mobile-nav__item">
           <a href="menu.html" class="active">Menu</a>
         </li>
@@ -60,9 +62,10 @@
         <li class="mobile-nav__item"><a href="shop.html">Shop</a></li>
       </ul>
     </nav>
+
     <div class="divider"></div>
     <section>
-      <h1>Shop</h1>
+      <h1>Menu</h1>
     </section>
     <div class="divider"></div>
     <footer>

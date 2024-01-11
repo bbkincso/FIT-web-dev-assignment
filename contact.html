@@ -13,7 +13,15 @@
     <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
+    <div class="backdrop"></div>
     <header class="main-header">
+      <div class="toggle-button-container">
+        <button class="toggle-button">
+          <div class="toggle-button__bar"></div>
+          <div class="toggle-button__bar"></div>
+          <div class="toggle-button__bar"></div>
+        </button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__items" id="nav-left">
           <li class="main-nav__item">
@@ -22,30 +30,128 @@
             /></a>
           </li>
           <li class="main-nav__item">
-            <a href="index.html" id="active">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="main-nav__item"><a href="events.html">Events</a></li>
-          <li class="main-nav__item">
-            <a href="contact.html">Contact Us</a>
-          </li>
+          <li class="main-nav__item"><a href="menu.html">Menu</a></li>
         </ul>
 
         <ul class="main-nav__items" id="nav-right">
+          <li class="main-nav__item">
+            <a href="contact.html" class="active">Contact Us</a>
+          </li>
           <li class="main-nav__item"><a href="shop.html">Shop</a></li>
-          <li class="main-nav__item"><a href="cart.html">Cart</a></li>
         </ul>
       </nav>
     </header>
-    <div class="divider"></div>
+    <nav class="mobile-nav">
+      <ul id="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="mobile-nav__item"><a href="events.html">Events</a></li>
+        <li class="mobile-nav__item" class="active">
+          <li class="mobile-nav__item"><a href="menu.html">Menu</a></li>
 
+          <a href="contact.html">Contact Us</a>
+        </li>
+        <li class="mobile-nav__item"><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+    <div class="divider"></div>
+    <section>
+      <h1>something</h1>
+    </section>
+
+    <div class="divider"></div>
+    <section class="booking">
+      <form class="booking-form">
+        <h2>Book a table</h2>
+        <ul class="booking-ul-left">
+          <li>
+            <input
+              required
+              id="full-name"
+              type="text"
+              name="full-name"
+              placeholder="Name*"
+            />
+          </li>
+          <li>
+            <input
+              required
+              id="email"
+              type="email"
+              name="email_address"
+              placeholder="Email*"
+            />
+          </li>
+          <li>
+            <input
+              required
+              id="phone"
+              type="phone"
+              name="phone"
+              placeholder="Phone*"
+            />
+          </li>
+        </ul>
+        <ul class="booking-ul-right">
+          <li>
+            <input
+              required
+              type="number"
+              name="people"
+              id="people"
+              min="0"
+              max="6"
+              placeholder="Table for:"
+            />
+          </li>
+          <li>
+            <input
+              required
+              type="date"
+              id="bookDate"
+              name="bookDate"
+              placeholder="Date*"
+            />
+          </li>
+          <li>
+            <select required id="booking-time" name="booking-time">
+              <option value="">Select time:</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select>
+          </li>
+        </ul>
+        <textarea
+          id="extraInfo"
+          name="extraInfo"
+          placeholder="Message"
+        ></textarea>
+
+        <button class="booking-button" type="submit">Send Request</button>
+        <p class="confirm-booking">
+          Thank you for sending a request! We will contact you soon.
+        </p>
+      </form>
+    </section>
     <div class="divider"></div>
     <footer>
       <section class="footer-section">
         <ul>
           <li><h3>Contact details</h3></li>
-          <li><p>Ipsum consequat Street, D2, Ireland</p></li>
-          <li><p>Tel: +353 (0)1 111 2222</p></li>
-          <li><p>Email: three.broomstics@harrypotter.com</p></li>
+          <li>
+            <p>Address: Ipsum consequat Street, D2, Ireland</p>
+          </li>
+          <li><p>Phone: +353 (0)1 111 2222</p></li>
+          <li><p>Email: three.broomstics@hp.com</p></li>
         </ul>
       </section>
       <section class="footer-section">
