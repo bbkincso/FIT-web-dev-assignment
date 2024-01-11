@@ -125,11 +125,7 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-#logo-img{
-    width:10rem;
-    height:10rem;
-    margin-right: 2.5rem;
-}
+
 /* navigation menu */
 .main-nav__items{
     display: inline-block;
@@ -164,6 +160,7 @@ body {
     /* font-size: 1.8rem; */
     font-size: 0.8rem;
     color: white;
+    font-weight: lighter;
 }
 
 .backdrop{
@@ -195,7 +192,6 @@ body {
     text-align: centre;
 }
 .mobile-nav__item{
-    /* margin-bottom: 2rem; */
     margin-bottom: 1rem;
 }
 /* table booking section */
@@ -208,6 +204,7 @@ body {
     box-shadow: 0 0 40px #000000;
     z-index: 1;
   }
+  
   .booking-form ul{
     display: block;
     /* width:100%;
@@ -259,7 +256,7 @@ body {
     outline: none;
   }
   .confirm-booking{
-    display: inline-block;
+    /* display: inline-block; */
     color: white;
     font-size: 0.6rem;
     /* margin-top: 1rem; */
@@ -353,6 +350,7 @@ footer p {
         width: 50%;
     }
     /* booking section */
+    
     .booking-button{
         display: block;
         font-size: 0.8;
@@ -392,29 +390,46 @@ footer p {
 /*view for larger screens size */
 @media only screen and (min-width: 768px) {
 
+    /* navigation bar style */
     .toggle-button-container{
         display: none;
     }
+    .main-header{
+        height: 25rem;
+    }
     .main-nav{
         display: block;
+        height: 25rem;
+        padding: 1.5rem 3rem 0 2.5rem;
+    }
+    #logo-img{
+        /* width:10rem;
+        height:10rem;
+        margin-right: 2.5rem; */
+        width:6.5rem;
+        height:6.5rem;
+        margin-right: 1.8rem;
     }
 
     /* booking section */
+    h2, .confirm-booking{
+        text-align: left;
+    }
     .booking-form{
         max-width: 60rem;
-        margin: auto;
+        text-align: center;
+        /* margin: auto; */
       }
       .booking-form ul{
         display: inline-block;
         /* width:48%; */
       }
-      .booking-ul-left{
+      .booking-form input, select{
+        margin:0 auto 1rem auto; 
+    }
+    .booking-button{
         float: left;
-      }
-      .booking-ul-right{
-        float: right;
-      }
-      
+    }
 
     /* footer */
     footer {
@@ -428,4 +443,12 @@ footer p {
     }
   }
 
+  @media only screen and (min-width: 768px) {
 
+    /* .booking-ul-left{
+        float: left;
+      }
+      .booking-ul-right{
+        float: right;
+      } */
+  }
