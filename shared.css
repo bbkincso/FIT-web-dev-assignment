@@ -58,6 +58,7 @@ abbr,acronym { border:0;
 html {
   overflow: hidden;
   height: 100%;
+  background-color: rgb(93, 151, 213);
 }
 
 body {
@@ -66,10 +67,11 @@ body {
   height: 100%;
   perspective: 1px;
   transform-style: preserve-3d;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .divider{
-    /* height: 0.7rem; */
     height: 0.3rem;
     background-color: rgb(93, 151, 213);
   }
@@ -77,18 +79,15 @@ body {
 /* Style for header */
 .main-header{
     width: 100%;
-    /* height: 40rem; */
     height: 15rem;
     background: url("images/bar-banner.png");
-    /* background-size: ; */
     background-size: cover;
 }  
 .main-nav,
 .toggle-button-container{
     width: 100%;
-    /* height: 40rem; */
     height: 15rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
     position: relative;
     padding: 2.5rem 3rem 0 2.5rem;
 }
@@ -148,7 +147,6 @@ body {
 .mobile-nav__item a{
     text-decoration: none;
     color: rgb(145, 184, 226);
-    /* font-size: 1.5rem; */
     font-size: 0.7rem;
     font-weight: lighter;
     text-align: center;
@@ -157,7 +155,6 @@ body {
 .main-nav__item a.active,
 .mobile-nav__item a:hover,
 .mobile-nav__item a.active{
-    /* font-size: 1.8rem; */
     font-size: 0.8rem;
     color: white;
     font-weight: lighter;
@@ -196,7 +193,6 @@ body {
 }
 /* table booking section */
 .booking{
-    /* padding:8rem 10%; */
     padding:2.5rem 10%;
     background-color: rgb(3, 9, 24);
     position: relative;
@@ -207,26 +203,20 @@ body {
   
   .booking-form ul{
     display: block;
-    /* width:100%;
-    margin: 0; */
     width:80%;
     margin:auto;
   }
   h2{
-    /* font-size: 1.5rem; */
     font-size: 1.3rem;
     color: rgb(93, 151, 213);
-    /* margin-bottom: 4rem; */
     margin-bottom: 1.5rem;
     font-weight: lighter;
   }
   .booking-form input, select{
     background-color: rgb(93, 151, 213);
     color: rgb(3, 9, 24);
-    /* font-size: 1rem; */
     font-size: 0.7;
     font-weight: bolder;
-    /* margin-bottom: 2rem; */
     margin-bottom: 1rem;
     width: 100%;
     outline: none;
@@ -246,7 +236,6 @@ body {
     font-weight: bolder;
     margin: 0 auto 1rem auto;
     width: 80%;
-    /* min-height: 10rem; */
     min-height: 5rem;
     display: block;
     box-sizing: border-box;  
@@ -256,12 +245,10 @@ body {
     outline: none;
   }
   .confirm-booking{
-    /* display: inline-block; */
+    display: none;
     color: white;
     font-size: 0.6rem;
-    /* margin-top: 1rem; */
     margin-top: 0.5rem;
-    /* padding: 0.5rem 1rem; */
     padding: 0.5rem 0;
   }
   .booking-button{
@@ -269,11 +256,8 @@ body {
     border: solid rgb(93, 151, 213) 2px;
     background-color: rgb(3, 9, 24);
     color: white;
-    /* font-size: 1.2rem; */
     font-size: 0.7rem;
     font-weight: bolder;
-    /* margin-top: 1rem; */
-    /* padding: 0.5rem 1rem; */
     padding: 0.2rem 0.5rem;
     margin-left: 10%;
   }
@@ -285,9 +269,7 @@ footer{
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    /* padding:4rem 0; */
     padding:1rem 0;
-
     flex-direction: column;
 }
 .footer-section{
@@ -295,6 +277,9 @@ footer{
     margin: 1.5rem auto;
     width: 80%;
     justify-content: center;
+    text-align: center;
+    vertical-align: top;
+    text-align: center;
 }
 #footer-logo{
     width:100%;
@@ -302,8 +287,6 @@ footer{
     padding:0 10%;
     min-width: 5rem;
     min-height: 5rem;
-    /* max-width: 17rem;
-    max-height: 17rem; */
     max-width: 14rem;
     max-height: 14rem;
 }
@@ -312,19 +295,15 @@ footer ul {
     width: 100%;
 }
 footer h3{
-    /* font-size: 1.6rem; */
     font-size: 1rem;
     font-weight: lighter;
     color: rgb(93, 151, 213);
-    /* margin-top: 3rem; */
     margin-bottom: 0.5rem;
 }
 footer p {
     color: white;
-    /* margin-top: 1rem; */
     margin-top: 0.5rem;
     font-weight: lighter;
-    /* font-size: ; */
     font-size: 0.7rem;
 }
 
@@ -363,28 +342,24 @@ footer p {
     /* footer */
     footer {
         flex-direction: row;
-        padding:1rem 5%;   
+        padding:2rem 5%;   
         vertical-align: top; 
 
        
      }
     #footer-logo{
-        min-width: 14rem;
-        min-height: 14rem;
-        max-width: 20rem;
-        max-height: 20rem;
-        /* padding: 1rem 0;  */
+        min-width: 10rem;
+        min-height: 10rem;
+        max-width: 18rem;
+        max-height: 18rem;
     }
     .footer-section{
-        /* width:30%; */
         display: flex;
         margin: auto;
         flex-basis: 100%; 
     }  
     
 }
-
-
 
 
 /*view for larger screens size */
@@ -403,15 +378,16 @@ footer p {
         padding: 1.5rem 3rem 0 2.5rem;
     }
     #logo-img{
-        /* width:10rem;
-        height:10rem;
-        margin-right: 2.5rem; */
         width:6.5rem;
         height:6.5rem;
         margin-right: 1.8rem;
     }
 
     /* booking section */
+    .booking{
+        padding:3.5rem 10%;
+    }
+
     h2, .confirm-booking{
         text-align: left;
     }
@@ -429,11 +405,13 @@ footer p {
     }
     .booking-button{
         float: left;
+        margin-right: 2rem;
     }
 
     /* footer */
     footer {
         flex-direction: row;
+        padding:3rem 5%;  
     }
     #footer-logo{
         width:100%;
@@ -443,12 +421,86 @@ footer p {
     }
   }
 
-  @media only screen and (min-width: 768px) {
-
-    /* .booking-ul-left{
+  @media only screen and (min-width: 1024px) {
+    
+    .divider{
+        height: 0.7rem; 
+      }
+      .main-header,.main-header{
+        height: 35rem;
+    }  
+    .main-nav__item a,
+    .main-nav__item a:hover,
+    .main-nav__item a.active{
+    font-size: 1.5rem;
+}
+#logo-img{
+    width:10rem;
+    height:10rem;
+    margin-right: 2.5rem;
+}
+/* booking section style */
+.booking{
+    padding:4rem 20%;
+  }
+  .booking-form{
+    margin-bottom: 8rem;
+  }
+  .booking-form ul{
+    width:48%;
+    margin: 0;
+    display: inline-block;
+  }
+  h2{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .booking-form input, select{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .booking-form input::placeholder,
+  .booking-form textarea::placeholder,
+  .booking-form select::placeholder{
+    font-size: 1rem;
+  }
+  .booking-form textarea{
+    min-height: 10rem;  
+    width: 100%;
+  }
+    .booking-ul-left{
         float: left;
       }
       .booking-ul-right{
         float: right;
-      } */
+      }
+      .confirm-booking{
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        float: left;
+      }
+      .booking-button{
+        display: block;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        margin-left: 0;
+      }
+      footer{
+        padding:4rem 0;
+    }
+    #footer-logo{
+        max-width: 17rem;
+        max-height: 17rem; 
+    }
+    footer h3{
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+    footer p {
+        margin-top: 1rem;
+        /* font-size: ; */
+    }
   }
+
