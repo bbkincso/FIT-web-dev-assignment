@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="shared.js" defer></script>
+    <script src="booking-form.js" defer></script>
   </head>
 
   <body>
@@ -101,8 +102,7 @@
         <ul class="booking-ul-left">
           <li>
             <input
-              required
-              id="full-name"
+              class="full-name"
               type="text"
               name="full-name"
               placeholder="Name*"
@@ -110,8 +110,7 @@
           </li>
           <li>
             <input
-              required
-              id="email"
+              class="email"
               type="email"
               name="email_address"
               placeholder="Email*"
@@ -119,8 +118,7 @@
           </li>
           <li>
             <input
-              required
-              id="phone"
+              class="phone"
               type="phone"
               name="phone"
               placeholder="Phone*"
@@ -130,10 +128,9 @@
         <ul class="booking-ul-right">
           <li>
             <input
-              required
               type="number"
-              name="people"
-              id="people"
+              name="group-size"
+              class="group-size"
               min="0"
               max="6"
               placeholder="Table for:"
@@ -141,15 +138,14 @@
           </li>
           <li>
             <input
-              required
               type="date"
-              id="bookDate"
+              class="bookDate"
               name="bookDate"
               placeholder="Date*"
             />
           </li>
           <li>
-            <select required id="booking-time" name="booking-time">
+            <select class="booking-time" name="booking-time">
               <option value="">Select time:</option>
               <option value="15:00">15:00</option>
               <option value="16:00">16:00</option>
@@ -162,8 +158,8 @@
           </li>
         </ul>
         <textarea
-          id="extraInfo"
-          name="extraInfo"
+          class="booking-message"
+          name="booking-message"
           placeholder="Message"
         ></textarea>
 
