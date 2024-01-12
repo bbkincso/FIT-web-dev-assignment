@@ -14,7 +14,10 @@
     />
     <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="events.css" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
     <script src="shared.js" defer></script>
+    <script src="events.js" defer></script>
+
   </head>
     <div class="backdrop"></div>
     <header class="main-header">
@@ -80,11 +83,61 @@
           <li><p>21/03 – Tellus at urna condimentum mattis pellentesque id. </p></li>
           <li><p> 29/03 – Mi bibendum neque egestas congue. </p></li>
       </ul>
-      <section class="gallery">
+
+
+      <section class="gallery-section">
+       
+
+              
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleIndicators"
+              data-mdb-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleIndicators"
+              data-mdb-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-mdb-target="#carouselExampleIndicators"
+              data-mdb-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-mdb-interval="10000">
+              <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
+            </div>
+            <div class="carousel-item" data-mdb-interval="10000">
+              <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+            </div>
+            <div class="carousel-item" data-mdb-interval="10000">
+              <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+            <span class="arrow">&laquo;</span>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+            <span class="arrow">&raquo;</span>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
+        </div>
+
+
+
 
       </section>
     </section>
-
 
     <footer>
       <section class="footer-section">
@@ -110,5 +163,7 @@
         </ul>
       </section>
     </footer>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
   </body>
 </html>
