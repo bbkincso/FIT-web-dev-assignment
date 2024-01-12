@@ -21,8 +21,6 @@ submitBookingButton.addEventListener('click', function(){
 
   if(name && email && phone && numOfPeople && date && time){
     confirmBookingMessage.style.display = 'inline-block';
-    // bookingForm.submit();
-    // bookingForm.reset();
     bookingName.value = '';
     bookingEmail.value = '';
     bookingPhone.value = '';
