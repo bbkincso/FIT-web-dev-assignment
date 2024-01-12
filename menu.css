@@ -4,7 +4,7 @@
 }
 
 .menu-section{
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
   padding: 4rem 10% 6rem 10%;
   background-color: rgb(255, 249, 239);
@@ -83,5 +83,11 @@ p {
   .menu-section{
     padding: 6rem 20% 8rem 20%;
   }
+  h2{
+    margin: 1.8rem 0 2.5rem 0;
+  }
+  h3{
+    margin-top: 1.3rem;
 
+  }
 }
