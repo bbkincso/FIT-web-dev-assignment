@@ -24,7 +24,6 @@ h1{
 #history{
   position: relative;
   transform-style: inherit;
-  /* padding:7rem 10% 10rem 10%; */
   padding:2.5rem 10% 3rem 10%;
   background-color: rgb(3, 9, 24);
   color: white;
@@ -33,7 +32,6 @@ h1{
 }
 
 #history p {
-  /* font-size: 1.2rem; */
   font-size: 0.7rem;
   font-weight: lighter;
   padding-bottom: 0.5rem;

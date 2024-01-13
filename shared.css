@@ -98,8 +98,6 @@ body {
     display: none;
 }
 .toggle-button{
-    /* width: 2.5rem;
-    height: 2.5rem; */
     width: 1.8rem;
     height: 1.8rem;
     background: transparent;
@@ -116,7 +114,6 @@ body {
     height: 0.2rem;
     background: white;
     display: block;
-    /* margin:0.6rem 0; */
     margin:0.3rem 0;
 
 }
@@ -405,11 +402,9 @@ footer p {
     .booking-form{
         max-width: 60rem;
         text-align: center;
-        /* margin: auto; */
       }
       .booking-form ul{
         display: inline-block;
-        /* width:48%; */
       }
       .booking-form input, select{
         margin:0 auto 1rem auto; 
@@ -511,7 +506,6 @@ footer p {
     }
     footer p {
         margin-top: 1rem;
-        /* font-size: ; */
     }
   }
 
