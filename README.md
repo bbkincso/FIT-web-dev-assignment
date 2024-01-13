@@ -18,7 +18,7 @@ This school project involves the development of a professional website tailored 
 
 ## Screenshots
 
-<src="./images/screenshots/small_1.png" width="200"> ![screenshot](./images/screenshots/small1:2.png)
+![screenshot](./images/screenshots/small1.png) ![screenshot](./images/screenshots/small1:2.png)
 
 ## Technologies
 
