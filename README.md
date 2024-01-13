@@ -59,6 +59,8 @@ Project is in progress
 
 - [Carousel slider Bootstrap 5 Tutorial](https://mdbootstrap.com/docs/standard/components/carousel/)
 
+- [25+ CSS Parallax Effects](https://freefrontend.com/css-parallax/)
+
 - [W3 schools – JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
 
 - [W3 schools – CSS Tutorial](https://www.w3schools.com/css/default.asp)
