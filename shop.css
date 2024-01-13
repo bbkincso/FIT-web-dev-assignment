@@ -20,7 +20,17 @@
   width:100%;
   min-height:150px;
   max-height: 200px;
-  background-color: rgb(3, 9, 24);
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+#img-container-1{
+  background-image: url("images/fire-whiskey.jpg");
+}
+#img-container-2{
+  background-image: url("images/shirt.jpg");
+}
+#img-container-3{
+  background-image: url("images/cup.jpg");
 }
 
 
