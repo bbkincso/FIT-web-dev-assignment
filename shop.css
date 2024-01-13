@@ -1,0 +1,153 @@
+.shop-section{
+  background-color: rgb(3, 9, 24);
+  padding: 3rem 15%;
+}
+
+.items-section{
+  background-color: rgb(93, 151, 213);
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  display: block;
+  padding: 2rem 10%;
+}
+
+.item-container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.image-container{
+  width:100%;
+  min-height:150px;
+  max-height: 200px;
+  background-color: rgb(3, 9, 24);
+}
+
+
+.shop-section h2, h3, p{
+  color: rgb(3, 9, 24);
+}
+
+.shop-section h1{
+  font-size: 1.4rem;
+  color: rgb(93, 151, 213);
+  margin-bottom: 2rem;
+}
+
+.shop-section h2{
+  font-size: 1.2rem;
+  margin: 1rem 0 0 0;
+  font-weight: bolder;
+}
+
+.shop-section p{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+
+.shop-section input{
+  background-color: rgb(3, 9, 24);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  width: 40%;
+  outline: none;
+}
+.shop-section input::placeholder{
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+transition: background-color 5000s;
+-webkit-text-fill-color: rgb(3, 9, 24)!important;
+}
+
+.addToCart-button{
+  border-radius: 5px; 
+  background-color: rgb(3, 9, 24);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding: 0.2rem 0.5rem;
+  margin-left: 8%;
+}
+
+
+.cart-section{
+  padding: 2rem 10%;
+  background-color: rgb(93, 151, 213);;
+}
+
+#cart-list {
+  list-style-type: none;
+}
+
+.cart-item {
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 540px) {
+
+  .items-section{
+    padding: 2rem 20%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .shop-section{
+    padding: 4rem 15% 6rem 15%;
+  }
+
+  .items-section{
+    padding: 3rem 10%;
+  }
+  
+  .item-container {
+    margin-bottom: 4rem;  
+  }
+
+  .image-container{
+    width:40%;
+    float: left;
+    margin-right: 10%;
+  }
+
+  .shop-section h1{
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .shop-section h2{
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .shop-section p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+  } 
+  .shop-section input{
+    font-size: 1 rem;
+    width: 30%;
+    margin-right: 10%;
+    margin-bottom: 0.5rem;
+  }
+  .addToCart-button{
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+    margin-left: 0;
+    width: 30%;
+  }
+
+  .cart-section{
+    padding: 2rem 15%;
+  }
+}

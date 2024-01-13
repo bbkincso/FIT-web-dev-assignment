@@ -13,8 +13,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="shared.css" />
-    <link rel="stylesheet" href="events.css" />
+    <link rel="stylesheet" href="shop.css" />
     <script src="shared.js" defer></script>
+    <script src="shop.js" defer></script>
   </head>
   <body>
     <div class="backdrop"></div>
@@ -69,9 +70,58 @@
       </ul>
     </nav>
     <div class="divider"></div>
-    <section>
+
+    <section class="shop-section">
       <h1>Shop</h1>
+
+      <section class="items-section">
+        <div class="item-container" id="item1">
+          <div class="image-container"></div>
+          <h2>FireWhiskey</h2>
+          <p>Price: 6 Sickles, 10 Knuts</p>
+          <input type="number" id="qty-whiskey" value="1" min="1" />
+          <button
+            class="addToCart-button"
+            onclick="addToCart('FireWhiskey', 10.06, 'qty-whiskey')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="item-container" id="item2">
+          <div class="image-container"></div>
+          <h2>T-shirt</h2>
+          <p>Price: 5 Sickles</p>
+          <input type="number" id="qty-shirt" value="1" min="1" />
+          <button
+            class="addToCart-button"
+            onclick="addToCart('T-shirt', 5.00, 'qty-shirt')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="item-container" id="item3">
+          <div class="image-container"></div>
+          <h2>Butterbeer cup</h2>
+          <p>Price: 1 Sickles</p>
+          <input type="number" id="qty-cup" value="1" min="1" />
+          <button
+            class="addToCart-button"
+            onclick="addToCart('Butterbeer cup', 1.00, 'qty-cup')"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </section>
+
+      <div class="cart-section">
+        <h2>Cart</h2>
+        <ul id="cart-list"></ul>
+        <p>Total: <span id="total">0.00</span> Sickles</p>
+      </div>
     </section>
+
     <div class="divider"></div>
     <footer>
       <section class="footer-section">
