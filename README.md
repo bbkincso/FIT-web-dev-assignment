@@ -20,6 +20,10 @@ This school project involves the development of a professional website tailored 
 
 ![screenshot](./images/screenshots/small1.png) ![screenshot](./images/screenshots/small1:2.png)
 
+![screenshot](./images/screenshots/small2.png) ![screenshot](./images/screenshots/small3.png)
+
+![screenshot](./images/screenshots/small4.png)
+
 ## Technologies
 
 - HTML5
@@ -29,12 +33,21 @@ This school project involves the development of a professional website tailored 
 
 ## Features
 
-–
-–
+- Responsive Design for screensize: for mobile, for small tablet, larger tablet, for desktop, mobile navigation
+- Parallax effect
+- Carouser Slider
+- Form for Booking (Only Front End)
+- Form validation for empty field in JavaScript
 
-To-do list:
+### To-do list:
 
-–
+- form validation using RegEx (name, email, phone, prevent HTML and script injection)
+- implement backend
+- compete shop page
+
+### What I would do differently
+
+I would create a Single Page Application and use a JavaScript framework such as Angular/React.
 
 ## Status
 
