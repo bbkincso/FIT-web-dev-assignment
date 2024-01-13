@@ -22,7 +22,7 @@ This school project involves the development of a professional website tailored 
 
 ![screenshot](./images/screenshots/small2.png) ![screenshot](./images/screenshots/small3.png)
 
-![screenshot](./images/screenshots/small4.png)
+![screenshot](./images/screenshots/small4.png) ![screenshot](./images/screenshots/small5.jpg)
 
 ## Technologies
 
@@ -33,17 +33,17 @@ This school project involves the development of a professional website tailored 
 
 ## Features
 
-- Responsive Design for screensize: for mobile, for small tablet, larger tablet, for desktop, mobile navigation
+- Responsive Design: screen sizes – mobile, small tablet, larger tablet, for desktop | mobile navigation
 - Parallax effect
 - Carouser Slider
-- Form for Booking (Only Front End)
-- Form validation for empty field in JavaScript
+- Form for Booking (only frontend)
+- Form validation for empty fields in JavaScript
 
 ### To-do list:
 
 - form validation using RegEx (name, email, phone, prevent HTML and script injection)
 - implement backend
-- compete shop page
+- complete shop page
 
 ### What I would do differently
 
@@ -51,7 +51,7 @@ I would create a Single Page Application and use a JavaScript framework such as 
 
 ## Status
 
-Project is in progress
+Project is in progress.
 
 ## Source
 
@@ -71,7 +71,7 @@ The project is deployed on GitHub Pages. [Link] (https://bbkincso.github.io/FIT-
 
 ## Other information
 
-Images, Google fonts, etc. in the project are used strictly for studying purposes and not for comeercial use.
+Images, Google fonts, etc. in the project are used strictly for studying purposes and not for commercial use.
 
 ## Contact
 
