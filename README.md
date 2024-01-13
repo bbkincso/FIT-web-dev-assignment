@@ -5,7 +5,6 @@ Web Design School Project
 - [General info](#general-info)
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
-- [Setup](#setup)
 - [Features](#features)
 - [Status](#status)
 - [Source](#source)
@@ -19,7 +18,7 @@ This school project involves the development of a professional website tailored 
 
 ## Screenshots
 
-![screenshot](./images/screenshots/small_1.png) ![screenshot](./images/screenshots/small1:2.png)
+<src="./images/screenshots/small_1.png" width="200"> ![screenshot](./images/screenshots/small1:2.png)
 
 ## Technologies
 
@@ -47,17 +46,17 @@ Project is in progress
 
 - [Carousel slider Bootstrap 5 Tutorial](https://mdbootstrap.com/docs/standard/components/carousel/)
 
-– [W3 schools – JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+- [W3 schools – JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
 
-– [W3 schools – CSS Tutorial](https://www.w3schools.com/css/default.asp)
+- [W3 schools – CSS Tutorial](https://www.w3schools.com/css/default.asp)
 
 ## Deployment
 
-The project is deployed on GitHub Pages. Link: https://bbkincso.github.io/FIT-web-dev-assignment/
+The project is deployed on GitHub Pages. [Link] (https://bbkincso.github.io/FIT-web-dev-assignment/)
 
 ## Other information
 
-Images, Google fonts, etc. in the project are used strictly for studying purpose and not for comeercial use.
+Images, Google fonts, etc. in the project are used strictly for studying purposes and not for comeercial use.
 
 ## Contact
 
