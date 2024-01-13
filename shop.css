@@ -4,7 +4,7 @@
 }
 
 .items-section{
-  background-color: rgb(93, 151, 213);
+  background-color: #fff9ef;
   width: 100%;
   margin: 0 auto 1rem auto;
   display: block;
@@ -92,7 +92,7 @@ transition: background-color 5000s;
 
 .cart-section{
   padding: 2rem 10%;
-  background-color: rgb(93, 151, 213);;
+  background-color: #fff9ef;
 }
 
 #cart-list {
